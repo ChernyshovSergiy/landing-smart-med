@@ -1,0 +1,75 @@
+/*Таймер*/
+.countbox {
+    width: 284px;
+    height: 110px;
+    margin: 0 auto 15px;
+    background: rgba(255,255,255,.4);
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    padding-top: 14px;
+}
+.countbox:before {
+    content: 'До конца акции осталось:';
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color:#333333;
+    margin-bottom: 10px;
+}
+.countbox .countbox-num {
+    float: left;
+}
+.countbox .countbox-space {
+    float: left;
+    height: 48px;
+    width: 24px;
+}
+.countbox-hours1, .countbox-mins1, .countbox-secs1, .countbox-hours2, .countbox-mins2, .countbox-secs2 {
+    float: left;
+    margin-right: 4px;
+    width: 36px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    z-index: 1;
+    color: #fff;
+    background: #2193be;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: .24px;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    margin-bottom: 0;
+    position: relative;
+}
+.countbox-hours2:after,
+.countbox-mins2:after {
+    content: ':';
+    display: block;
+    font-weight: 700;
+    color:#2193be;
+    font-size: 32px;
+    position: absolute;
+    top:-1px;
+    right: -20px;
+}
+.countbox-hours-text {
+    padding-left: 0;
+}
+.countbox-secs2 {
+    margin-right: 0;
+}
+.countbox-hours1 {
+    margin-left: 0;
+}
+.countbox-hours-text, .countbox-mins-text, .countbox-secs-text {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+    color:#333333;
+    text-align: center;
+    text-transform: lowercase;
+}
