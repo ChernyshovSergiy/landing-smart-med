@@ -2,7 +2,46 @@
 .block1 {
     background: url(../img/b1nmh.jpg) no-repeat center top;
     height: 660px;
-    padding: 18px 0 0;
+    padding: 0 0 0;
+}
+.block1 .nav{
+    background:rgba(0,0,0,0.2);
+    border-bottom:1px solid rgba(255,255,255,0.1);
+    height:50px;
+}
+.block1 .nav img{
+    float:left;
+    padding-top:35px;
+}
+.block1 .nav ul{
+    text-align:center;
+    height: 50px;
+}
+.block1 .nav strong{
+    color: #fff;
+    font-size: 35px;
+    text-transform: uppercase;
+    position: absolute;
+    padding-top: 10px;
+    font-weight: 800;
+}
+.block1 .nav ul li{
+    display:inline-block;
+    margin-left:35px;
+    line-height:50px;
+    text-transform:uppercase;
+    font-weight:700;
+    font-size:14px;
+}
+.block1 .nav ul li a{
+    color:#fff;
+    text-decoration:none;
+    position:relative;
+}
+.block1 .nav ul li a:hover{
+    color:#00547b;
+    border-bottom:1px solid #00547b;
+    top:-1px;
 }
 .block1 h1 {
     font-size: 46px;
