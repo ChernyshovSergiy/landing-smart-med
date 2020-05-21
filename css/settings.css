@@ -117,7 +117,7 @@ section{
     position: relative;
     display: block;
     outline: 0;
-    border: 1px solid #2193be;
+    border: 1px solid #6fb05c;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     width: 100%;
@@ -194,7 +194,7 @@ h2.title{
     text-align: center;
     letter-spacing: .4px;
     font-size: 39px;
-    color:#00547b;
+    color: #114700;
 }
 .ts:after {
     content:'';
@@ -216,7 +216,7 @@ h2.title{
     height: 85px;
     width: 50%;
     float: left;
-    background: #2193be;
+    background: #6fb05c;
     padding-top: 11px;
 }
 .old-cost span {
@@ -232,7 +232,7 @@ h2.title{
     height: 85px;
     width: 50%;
     float: right;
-    background: #00547b;
+    background: #114700;
     padding-top: 11px;
 }
 .new-cost span {

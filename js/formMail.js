@@ -14,15 +14,15 @@ jQuery(document).ready(function($){
     document.getElementById('newFull').textContent = '₴' + (newFullKitPrice +'').replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 ') + '*';
     document.getElementById('newMiddle').textContent = '₴' + (newMiddleKitPrice +'').replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 ') + '*';
     document.getElementById('newBase').textContent = '₴' + (newBaseKitPrice +'').replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 ') + '*';
-    let packs = ['checkFull'];
+    let packs = ['checkMeddle'];
     let switchCheckBox = true;
-    let newSum = newFullKitPrice;
-    let oldSum = oldFullKitPrice;
-    let btnText = btnTexts[0];
+    let newSum = newMiddleKitPrice;
+    let oldSum = oldMiddleKitPrice;
+    let btnText = btnTexts[1];
     let textSum = '';
     let collectionCheckbox = document.getElementsByClassName("checkPack")
     Array.prototype.forEach.call(collectionCheckbox, function(el) {
-        el.checked = el.value === 'checkFull';
+        el.checked = el.value === 'checkMeddle';
     });
     $('.checkPack').click(function (message) {
         let box = $(this);
@@ -108,7 +108,7 @@ jQuery(document).ready(function($){
         let nameRegEx = /^([а-яё\s]+|[a-z\s]+)$/iu;
         let phoneNoRegEx = /^((8|\+38)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$/;
 
-        form.find('.field').css({border: '1px solid #2193be'});
+        form.find('.field').css({border: '1px solid #6fb05c'});
 
         if(packs.length < 1) {
             $('.errorMessage--kit').text('Пожалуйста выберите набор');
@@ -126,14 +126,14 @@ jQuery(document).ready(function($){
         } else if (phone === '') {
             $('.errorMessage--kit').text('');
             $('.errorMessage--name').text('');
-            form.find('.form_field--name').css({border: '1px solid #2193be'});
+            form.find('.form_field--name').css({border: '1px solid #6fb05c'});
             $('.errorMessage--phone').text('Введите Ваш номер телефона!');
             form.find('.form_field--phone').css({border: '1px solid #ff0000'});
             event.preventDefault();
         } else if (phone.match(phoneNoRegEx) === null) {
             $('.errorMessage--kit').text('');
             $('.errorMessage--name').text('');
-            form.find('.form_field--name').css({border: '1px solid #2193be'});
+            form.find('.form_field--name').css({border: '1px solid #6fb05c'});
             $('.errorMessage--phone').text(`Телефонный номер должен состоять из 10 цифр!`);
             form.find('.form_field--phone').css({border: '1px solid #ff0000'});
             event.preventDefault();
@@ -141,8 +141,8 @@ jQuery(document).ready(function($){
             $('.errorMessage--kit').text('');
             $('.errorMessage--name').text('');
             $('.errorMessage--phone').text('');
-            form.find('.form_field--name').css({border: '1px solid #2193be'});
-            form.find('.form_field--phone').css({border: '1px solid #2193be'});
+            form.find('.form_field--name').css({border: '1px solid #6fb05c'});
+            form.find('.form_field--phone').css({border: '1px solid #6fb05c'});
             resultKit.html('')
             resultName.html('')
             resultPhone.html('')
@@ -193,7 +193,7 @@ jQuery(document).ready(function($){
                                 background: 'linear-gradient(to bottom, rgba(250,255,0,1) 0%,rgba(255,238,2,1) 100%)',
                                 'border-bottom': '4px solid #ad9d00',
                                 cursor: 'pointer'})
-                            .text(btnTexts[0])
+                            .text(btnTexts[1])
                         let modal = '#modal'
                         document.querySelector(modal).classList.add('open');
                         document.addEventListener('click', function(e) {
@@ -204,7 +204,7 @@ jQuery(document).ready(function($){
                         })
                         setTimeout(function () {
                             document.querySelector(modal).classList.remove('open')
-                            $('.sendMail').text(btnTexts[0])
+                            $('.sendMail').text(btnTexts[1])
                         }, 7000);
                     }
                 },

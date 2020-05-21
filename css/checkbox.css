@@ -9,12 +9,12 @@
 .checkbox > label {
     margin-left: 10px;
     cursor: pointer;
-    color: #01374b;
+    color: #114700;
 }
 .checkbox > label::before {
     content: '';
     position: relative;
-    border: 2px solid #000000;
+    border: 2px solid #114700;
     display: inline-block;
     width: 16px;
     height: 16px;
@@ -37,7 +37,7 @@ input[type="checkbox"]:checked + label::before {
     width: 10px;
     border-top: 0 solid #fff;
     border-left: 0 solid #fff;
-    border-right: 2px solid #00547b;
-    border-bottom: 2px solid #00547b;
+    border-right: 2px solid #114700;
+    border-bottom: 2px solid #114700;
     margin-right: 10px;
 }
