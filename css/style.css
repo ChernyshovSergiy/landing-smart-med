@@ -14,8 +14,15 @@
     padding-top:35px;
 }
 .block1 .nav ul{
+    overflow: hidden;
+    list-style-type: none;
+    background-color:rgba(0,0,0,0.2);
     text-align:center;
     height: 50px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000
 }
 .block1 .nav strong{
     color: #fff;
