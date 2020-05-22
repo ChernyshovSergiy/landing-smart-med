@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
     <head>
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width"/>
@@ -64,7 +64,7 @@
                             <a href="#l10">Доставка</a>
                         </li>
 <!--                        <li>-->
-<!--                            <a href="javascript:void(0);" class="icon" onclick="myFunction()">-->
+<!--                            <a href="javascript:void(0);" class="icon" onclick="myFunction()" style="font-size: 18px">-->
 <!--                                <i class="fa fa-bars"></i>-->
 <!--                            </a>-->
 <!--                        </li>-->
@@ -97,13 +97,13 @@
                         <div class="checkbox">
                             <input class="checkPack check-full" type="checkbox" id="full" name="full" value="checkFull">
                                 <label class="labelCheckFull" for="full">Полный</label>
-                            </input>
+
                             <input class="checkPack checkMeddle" type="checkbox" id="middle" name="middle" value="checkMeddle" checked>
                                 <label class="labelCheckMeddle" for="middle">Средний</label>
-                            </input>
+
                             <input class="checkPack checkBase" type="checkbox" id="base" name="base" value="checkBase">
                                 <label class="labelCheckBase" for="base">Базовый</label>
-                            </input>
+
                         </div>
                         <span class="errorMessage errorMessage--name"></span>
                         <label>
@@ -173,14 +173,14 @@
                 <p>Предлагаемую противовирусную терапию необходимо начинать при первом возникновении симптомов заболевания. В этом случае наблюдается максимально быстрый эффект. Прием препаратов также препятствует возникновению вторичной бактериальной инфекции.
                 По состоянию на 29 апреля 2020 года нами вылечено 89 пациентов с подтвержденным диагнозом «коронавирусная инфекция». У 95 % симптоматика «уходит» на 5 день, с 3-го дня приема наблюдается значительное улучшение состояния здоровья.
                 </p>
-                <ul class="percent">
+                <div class="percent">
                     <p>&emsp;Результаты проведенных исследований опубликованы в научных журналах в Украине и за рубежом, а так же защищены патентами:
-                    <p>&emsp;В.И.Портниченко, В.Е.Досенко, С.И. Павлович, А.М. Шиш, З.О. Серебровська</p>
+                    В.И.Портниченко, В.Е.Досенко, С.И. Павлович, А.М. Шиш, З.О. Серебровська</p>
                     <p>&emsp;Антиоксидантний, протизапальний та метаболічний ефекти введення наночасток діоксиду церію при експериментальній пневмонії у щурів. V Наукова конференція
-                        <a href="http://nansys2016.icybcluster.org.ua/" target="_blank">Нанорозмірні системи: будова, властивості, технології</a>
+                    <p><a href="http://nansys2016.icybcluster.org.ua/" target="_blank">Нанорозмірні системи: будова, властивості, технології</a>
                         , НАНУ( Біофункціональні наноматеріали, наносистеми в біології та медицині). 1-2 грудня 2016 р.
                         Патент на изобретение №119489 Патент на изобретение № 127738; Патент на полезную модель №50803<p>
-                </ul>
+                </div>
                 <div class="line">
                     <ul class="percent">
                         <li><p>С 3-го дня приема наблюдается значительное улучшение состояния здоровья.</p></li>
@@ -220,7 +220,7 @@
         <section class="block6" id="l5">
             <div class="wrap">
                 <h2 class="title ts">Выберите подходящий набор для вас или вашей семьи!</h2>
-                <table class="table" cellpadding="0" cellspacing="0">
+                <table class="table">
                     <tr>
                         <th class="t-title">ТЕРАПЕВТИЧЕСКОЕ<br>ВОЗДЕЙСТВИЕ</th>
                         <th><img src="img/bigComplect-s.png" alt="">
@@ -512,13 +512,13 @@
                         <div class="checkbox">
                             <input class="checkPack checkFull" type="checkbox" id="fullDown" name="full" value="checkFull">
                                 <label class="labelCheckFull" for="fullDown">Полный</label>
-                            </input>
+
                             <input class="checkPack checkMeddle" type="checkbox" id="middleDown" name="middle" value="checkMeddle" checked>
                                 <label class="labelCheckMeddle" for="middleDown">Средний</label>
-                            </input>
+
                             <input class="checkPack checkBase" type="checkbox" id="baseDown" name="base" value="checkBase">
                                 <label class="labelCheckBase" for="baseDown">Базовый</label>
-                            </input>
+
                         </div>
                         <span class="errorMessage errorMessage--name"></span>
                         <label>
@@ -541,30 +541,45 @@
                 <p>НПО “Международный медицинский центр”
                     <a href="https://imc.com.ua"
                        style=
-                               "text-decoration: none;
-                                color: inherit;
-                                font-size: 18px;"
-                                target="_blank"
+                           "text-decoration: none;
+                            color: inherit;
+                            font-size: 18px;"
+                            onmouseover="this.style.color='#ff9900';"
+                            onmouseout="{this.style.color='#333';}"
+                            target="_blank"
                     >
                         клиника "СмартМед"
                     </a><br>
                     2501024, г. Киев, ул. Лютеранская, д. 16</p>
                 <p style="text-align: center">
-                    <a href="politics.html" target="_blank">Политика конфиденциальности</a>
-                    <a href="agreement.html" target="_blank">Пользовательское соглашение</a>
+                    <a href="politics.html"
+                       onmouseover="this.style.color='#ff9900';"
+                       onmouseout="{this.style.color='#333';}"
+                       target="_blank">Политика конфиденциальности</a>
+                    <a href="agreement.html"
+                       onmouseover="this.style.color='#ff9900';"
+                       onmouseout="{this.style.color='#333';}"
+                       target="_blank">Пользовательское соглашение</a>
                 </p>
                     <div style="text-align: center;">
                         <div style="font-size: small;">
                             Landing pages by
                             <a href="https://test.enebra.org"
                                 style="text-decoration: none;
-                                color: inherit;" target="_blank">
-                                enebra.pro;
+                                color: inherit;"
+                               onmouseover="this.style.color='#ff9900';"
+                               onmouseout="{this.style.color='#333';}"
+                               target="_blank"
+                            >
+                                Enebra.pro;
                             </a>
                             Powerd by
                             <a href="https://md.expo-products.com"
                                style="text-decoration: none;
-                                color: inherit;" target="_blank">
+                               color: inherit;"
+                               onmouseover="this.style.color='#ff9900';"
+                               onmouseout="{this.style.color='#333';}"
+                               target="_blank">
                                 md.expo-products.com
                             </a>
                             <br>
@@ -581,7 +596,7 @@
                 <div class="modal-dialog">
                     <div class="modal-content myBody">
                         <div class="modal-body">
-                            <center>
+                            <div style="text-align: center;">
                                 <div class="custom">
                                     <h3 class="title">Ваша заявка успешно отправлена!</h3>
                                     <Br> Мы свяжемся с Вами в ближайшее время.
@@ -592,7 +607,7 @@
                                         <a href="/" data-close="modal pointer">Закрыть</a>
                                     </p>
                                 </div>
-                            </center>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -606,7 +621,7 @@
         <script src="js/main.js"></script>
         <script src="js/formMail.js"></script>
 <!--        <script src="js/mobil-menu.js"></script>-->
-        <script src="js/script.js"></script>
+<!--        <script src="js/script.js"></script>-->
 
         <script type="text/javascript">
             const arrgetbtn = [];
