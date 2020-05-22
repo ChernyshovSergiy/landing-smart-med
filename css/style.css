@@ -5,7 +5,7 @@
     padding: 0 0 0;
 }
 .block1 .nav{
-    background:rgba(0,0,0,0.2);
+    /*background:rgba(0,0,0,0.2);*/
     border-bottom:1px solid rgba(255,255,255,0.1);
     height:50px;
 }
@@ -16,7 +16,7 @@
 .block1 .nav ul{
     overflow: hidden;
     list-style-type: none;
-    background-color:rgba(0,0,0,0.2);
+    background-color:rgba(0,0,0,0.6);
     text-align:center;
     height: 50px;
     position: fixed;
@@ -46,8 +46,10 @@
     position:relative;
 }
 .block1 .nav ul li a:hover{
-    color:#114700;
-    border-bottom:1px solid #114700;
+    /*color:#114700;*/
+    color: #ff9900;
+    /*border-bottom:1px solid #114700;*/
+    border-bottom:1px solid  #ff9900;
     top:-1px;
 }
 .block1 h1 {

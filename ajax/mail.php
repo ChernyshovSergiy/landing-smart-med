@@ -1,7 +1,8 @@
 <?php
 
 $to = '<enebra.org@gmail.com>, ';
-$to .= 'globalchallengesprize@gmail.com';
+//$to .= 'freeedua@gmail.com ';
+//$to .= 'oleh.chernyuk@gmail.com ';
 
 $subject = 'Закупка БДА комплекса';
 
@@ -68,9 +69,9 @@ if ( !$error ) {
 				<p></br>Заказ создан в <b>$label</b> форме</br></p>";
 
 	$headers = "Content-type: text/html; charset=utf-8 \r\n";
-	$headers .= "From: Lending Page SmartMed <suport@enebra.org>\r\n";
-	$headers .= "Reply-To: order@enebra.org\r\n";
-	$headers .= "Cc: sergeyvegas1972@gmail.com\r\n";
+	$headers .= "From: Lending Page SmartMed <suport@fitoliniya.com>\r\n";
+	$headers .= "Reply-To: order@fitoliniya.com\r\n";
+//	$headers .= "Cc: sergeyvegas1972@gmail.com\r\n";
 
 	if (mail($to, $subject, $message, $headers)) {
 		$res = 'Сообщение отправлено, спасибо за заявку!';

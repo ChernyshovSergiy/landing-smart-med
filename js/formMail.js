@@ -19,11 +19,12 @@ jQuery(document).ready(function($){
     let newSum = newMiddleKitPrice;
     let oldSum = oldMiddleKitPrice;
     let btnText = btnTexts[1];
-    let textSum = '';
+    let textSum = '₴'+ (newMiddleKitPrice +'').replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 ') + '*';
     let collectionCheckbox = document.getElementsByClassName("checkPack")
     Array.prototype.forEach.call(collectionCheckbox, function(el) {
         el.checked = el.value === 'checkMeddle';
     });
+
     $('.checkPack').click(function (message) {
         let box = $(this);
         let item = box.attr('value')
@@ -113,6 +114,8 @@ jQuery(document).ready(function($){
         if(packs.length < 1) {
             $('.errorMessage--kit').text('Пожалуйста выберите набор');
             event.preventDefault();
+        }else if(textSum === '') {
+            textSum = '₴'+ (newMiddleKitPrice +'').replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 ') + '*';
         }else if (name === '') {
             $('.errorMessage--kit').text('');
             $('.errorMessage--name').text('Введите Ваше имя!');
@@ -146,6 +149,7 @@ jQuery(document).ready(function($){
             resultKit.html('')
             resultName.html('')
             resultPhone.html('')
+            // console.log(textSum)
 
             $.ajax({
                 url: 'ajax/mail.php',
