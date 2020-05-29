@@ -6,7 +6,7 @@ jQuery(document).ready(function($){
     let oldFullKitPrice = 14700;
     let oldMiddleKitPrice = 5300;
     let oldBaseKitPrice = 2650;
-    let btnTexts = ['заказать полный набор', 'заказать средний набор', 'заказать базовый набор', 'заказать наборы', 'выберите набор']
+    let btnTexts = ['заказать полный комплекс', 'заказать средний комплекс', 'заказать базовый комплекс', 'заказать комплексы', 'выберите комплекс']
 
     document.getElementById('oldFull').textContent = '₴' + (oldFullKitPrice +'').replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 ') + '*';
     document.getElementById('oldMiddle').textContent = '₴' + (oldMiddleKitPrice +'').replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 ') + '*';
@@ -112,7 +112,7 @@ jQuery(document).ready(function($){
         form.find('.field').css({border: '1px solid #6fb05c'});
 
         if(packs.length < 1) {
-            $('.errorMessage--kit').text('Пожалуйста выберите набор');
+            $('.errorMessage--kit').text('Пожалуйста выберите комплекс');
             event.preventDefault();
         }else if(textSum === '') {
             textSum = '₴'+ (newMiddleKitPrice +'').replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 ') + '*';

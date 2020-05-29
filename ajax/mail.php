@@ -22,7 +22,7 @@ $kids = [];
 $money ='';
 
 if (count($packs) < 1) {
-	$res_packs .= 'Нет выбранного набора';
+	$res_packs .= 'Нет выбранного комплекса';
 	$error = true;
 }
 
@@ -50,11 +50,11 @@ if ( empty($phone) ) {
 
 foreach ($packs as $pack) {
 	if ($pack === 'checkFull') {
-		$kids[] = 'Полный набор';
+		$kids[] = 'Полный комплекс';
 	} elseif ($pack === 'checkMeddle') {
-		$kids[] = 'Средний набор';
+		$kids[] = 'Средний комплекс';
 	} else {
-		$kids[] = 'Базовый набор';
+		$kids[] = 'Базовый комплекс';
 	}
 }
 
@@ -64,7 +64,7 @@ $money = substr($sum, 0, -1);
 if ( !$error ) {
 	$message = "<p>Заказ комплекта биологически активных добавок </p> </br> 
  				<p>Для:<b> $name </b><i>Телефонный номер: <b>$phone</b> </i></p> </br>
- 				<p>Заказаны комплекты: <b>$list_packs </b></p> </br>
+ 				<p>Заказаны комплексы: <b>$list_packs </b></p> </br>
  				<p>На сумму: <b>$money грн </b></p> </br>
 				<p></br>Заказ создан в <b>$label</b> форме</br></p>";
 
